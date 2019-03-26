@@ -5,10 +5,10 @@ var assert = require('assert');
 var getHashTags = require('./index.js');
 
 assert.deepEqual(
-    getHashTags('Прохожу курс на #coursera по #javascript'),
-    ['coursera', 'javascript'],
-    'Строка "Прохожу курс на #coursera по #javascript"' +
-    ' должна содержать хэштеги "coursera, javascript"'
+    getHashTags('Прохожу курс на #pravo по #javascript'),
+    ['pravo', 'javascript'],
+    'Строка "Прохожу курс на #pravo по #javascript"' +
+    ' должна содержать хэштеги "pravo, javascript"'
 );
 
 console.info('OK!');
