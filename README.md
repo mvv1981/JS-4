@@ -4,8 +4,8 @@
 В этом задании необходимо вернуть список хештегов, которые содержатся в твите.
 
 var getHashTags = require('./index.js');
-console.info(getHashTags('Прохожу курс на #pravo по #frontend'));
-// ["pravo", "frontend"]
+console.info(getHashTags('Прохожу курс на #pravo по #jsvascript'));
+// ["pravo", "jsvascript"]
 ## Условия
 Строка содержит только буквы русского и латинского алфавита, знак решетки и пробелы.
 Гарантируется, что в функцию передается непустая строка.
