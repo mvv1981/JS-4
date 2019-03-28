@@ -1,0 +1,19 @@
+{
+  "name": "js-4",
+  "version": "1.0.0",
+  "description": "В этом задании необходимо вернуть список хештегов, которые содержатся в твите.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lebed-kun/JS-4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lebed-kun/JS-4/issues"
+  },
+  "homepage": "https://github.com/Lebed-kun/JS-4#readme"
+}
