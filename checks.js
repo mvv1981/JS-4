@@ -11,4 +11,15 @@ assert.deepEqual(
     ' должна содержать хэштеги "pravo, javascript"'
 );
 
+assert.deepEqual(
+    getHashTags('Строка но без хештегов'), [], 'Строка не содержит хештегов');
+
+
+assert.deepEqual(
+        getHashTags('Строка с хештегом # выглядит # так'), [], 'Пустой хештег');
+    
+assert.deepEqual(
+    getHashTags('Строка с хештегом # выглядит #привет_буфет так'), ['привет_буфет'], 'Пустой хештег и "привет_буфет"');
+    
+
 console.info('OK!');
