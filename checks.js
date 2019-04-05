@@ -11,4 +11,28 @@ assert.deepEqual(
     ' должна содержать хэштеги "pravo, javascript"'
 );
 
-console.info('OK!');
+assert.deepEqual(
+    getHashTags('#я прохожу курс в #Праvo'),
+    ['я', 'Праvo'],
+    'Массив должен содержать хэштеги "я, Праvo"'
+);
+
+assert.deepEqual(
+    getHashTags('#qwerty'),
+    ['qwerty'],
+    'Массив должен содержать хэштег "qwerty"'
+);
+
+assert.deepEqual(
+    getHashTags('qwerty console log'),
+    [],
+    'Массив должен быть пустым'
+);
+
+assert.deepEqual(
+    getHashTags('qwerty # console #log'),
+    ['log'],
+    'Массив должен содержать хэштег "log"'
+);
+console.info('Unit tests is OK!');
+
