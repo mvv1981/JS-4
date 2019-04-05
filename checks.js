@@ -28,5 +28,11 @@ assert.deepEqual(
     [],
     'Массив должен быть пустым'
 );
+
+assert.deepEqual(
+    getHashTags('qwerty # console #log'),
+    ['log'],
+    'Массив должен содержать хэштег "log"'
+);
 console.info('Unit tests is OK!');
 
